@@ -1,0 +1,272 @@
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC;
+    font-family: "Inter" sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.caja-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.logo{
+    position: absolute;
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;
+}
+
+#ingresando{
+    display: none;
+}
+#aparece-ahorcado{
+    display: none;
+}
+#sec-acciones{
+    display: none;
+}
+
+.botonJuego{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 317px;
+    height: 114px;
+    left: 561px;
+    top: 402px;
+    background: #0A3871;
+    border-radius: 24px;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.botonAgregar{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 280px;
+    height: 67px;
+    left: 579px;
+    top: 554px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0A3871;
+    background: #F3F5FC;
+}
+
+.ingreso{
+    position: absolute;
+    height: 40px;
+    width: 577px;
+    left: 390px;
+    top: 250px;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color:#F3F5FC;
+    border: none;
+}
+
+.ingreso::placeholder{
+    color: #0A3871;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 329px;
+    height: 18px;
+    left: 390px;
+    top: 790px;
+}
+
+.exclamacion{
+    position: static;
+    width: 16px;
+    height: 16px;
+    left: 0px;
+    top: 1px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.descripcion p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 365px;
+    top: 785px;
+}
+
+.botonEmpezar{
+    color: #D8DFE8;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+    background: #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+}
+
+.botonCancelar{
+    color: #0A3871;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 352px;
+    top: 0px;
+    background: #F3F5FC;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+}
+
+.resultado{
+    font-size: 28px;
+    position: absolute;
+    width: 198px;
+    height: 40px;
+    left: 832px;
+    top: 280px;
+}
+
+.canvas{
+    flex-direction: column;
+    align-items: center;
+    padding-left: 150px;
+    gap: 24px;
+    width: 464px;
+    height: 152px;
+    left: 488px;
+    top: 575px;
+    display: none;
+}
+
+.acciones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 688px;
+    height: 67px;
+    left: 365px;
+    top: 785px;    
+}
+
+.botonNuevo{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 332px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.botonDesistir{
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 332px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    background: #F3F5FC;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.pie{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 567px;
+    top: 985px;
+    color: #0A3871;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 120%;
+}
